@@ -6,7 +6,9 @@ package model.Spreadsheet.src.model;
  * @version February 28th, 2023
  */
 public abstract class Token {
-    public Token() {
+    public Token myToken;
 
+    public Token getToken() {
+        return myToken;
     }
 }
