@@ -1,12 +1,19 @@
 package model.Spreadsheet.src.model;
 
 public class CellToken extends Token {
-    private int myColumn;   // column A = 0, B = 1, ...
-    private int myRow;
+    private final int myColumn;   // column A = 0, B = 1, ...
+    private final int myRow;
 
-    public CellToken(final int theColumn, final int theRow) {
-        super();
-        myColumn = theColumn;
-        myRow = theRow;
+    public CellToken() {
+        myColumn = 0;
+        myRow = 0;
+    }
+
+    public int getRow() {
+        return myRow;
+    }
+
+    public int getColumn() {
+        return myColumn;
     }
 }
